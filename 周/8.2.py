@@ -10,7 +10,7 @@ sumXY = tf.reduce_sum((x-meanX)*(y-meanY))
 sumX = tf.reduce_sum((x-meanX)*(x-meanX))
 w = sumXY/sumX
 b = meanY-w*meanX
-print("W=",w,"\nb=",b)
+print("W=",w.numpy(),"\nb=",b.numpy())
 
 
 
